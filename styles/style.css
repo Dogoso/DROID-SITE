@@ -113,11 +113,31 @@ section#learnmore > h3 {
     background-color: #095f3e;
     padding: 10px;
     color: white;
+    text-indent: 20px;
+}
+
+section#learnmore > ul{
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+section#learnmore > ul > li::before{
+    content: '🤖 ';
+}
+
+span{
+    text-decoration: underline;
 }
 
 img {
     position: block;
     margin: auto;
+}
+
+section#end {
+    padding-top: 0px;
 }
 
 footer {
@@ -127,10 +147,21 @@ footer {
     color: white;
 }
 
+img, iframe{
+    display: block;
+    margin: auto;
+}
+
 @media screen and (max-width: 600px){
     
     nav {
         text-align: center;
+    }
+
+    section#learnmore > ul{
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
     }
 
 }
