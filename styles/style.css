@@ -22,8 +22,27 @@ body{
     background-color: #9affab;
 }
 
+strong, a {
+    color: #095f3e;
+}
+
 p {
     text-indent: 50px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a::after {
+    content: url('../imagens/link.png');
 }
 
 header {
@@ -82,13 +101,13 @@ header > section {
 }
 
 section {
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
 }
 
 main {
     background-color: white;
     margin: auto;
-    width: 70vw;
+    width: 80vw;
     box-shadow: 1px 1px 4px #0000006b;
 }
 
@@ -147,13 +166,42 @@ footer {
     color: white;
 }
 
+footer > strong {
+    color: white;
+}
+
 img, iframe{
     display: block;
     margin: auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+div#video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 90%;
+}
+
 @media screen and (max-width: 600px){
     
+    main {
+        width: 100vw;
+    }
+
     nav {
         text-align: center;
     }
